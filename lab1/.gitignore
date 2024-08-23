@@ -1,0 +1,5 @@
+videos
+*.txt
+!171.txt
+
+__pycache__
