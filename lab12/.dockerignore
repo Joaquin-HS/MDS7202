@@ -1,0 +1,30 @@
+# Se ignoran archivos y carpetas innecesarias
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.sqlite3
+
+# Se ignoran configuraciones locales
+.env
+*.env
+.vscode/
+.idea/
+*.iml
+
+# Se ignora Git
+.git/
+*.gitignore
+
+# Se ignoran carpetas específicas
+imgs/
+mlruns/
+# models/
+plots/
+
+# Se ignoran archivos específicos
+Lab12.ipynb
+optimize.py
+water_potability.csv

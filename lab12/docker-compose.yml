@@ -1,0 +1,17 @@
+version: "3.12.3"
+
+services:
+  api:
+    build:
+      context: .  # Ruta donde se encuentra el Dockerfile
+      dockerfile: dockerfile  # Nombre exacto del Dockerfile
+    ports:
+      - "8000:8000"  # Mapeo del puerto 8000 del contenedor al 8000 del host
+    volumes:
+      - ./data:/app/data  # Se monta el volumen local `./data` al directorio `/app/data` dentro del contenedor
+    environment:
+      - PYTHONUNBUFFERED=1  # Logs de Python se muestran en tiempo real
+    container_name: water_api_container
+
+volumes:
+  data:  # Volumen persistente para datos
